@@ -45,10 +45,9 @@ __all__ += numpy_array_creation_routines
     
     
 from .ch import Ch
-import six
 import numpy as np
 import warnings
-from six.moves import cPickle as pickle
+import pickle
 import scipy.sparse as sp
 from .utils import row, col
 from copy import copy as copy_copy

@@ -1029,7 +1029,7 @@ class Ch(object):
                         result += string_for(getattr(self, dterm), dterm)
 
             if cachelim != np.inf and hasattr(self, '_cache') and 'drs' in self._cache:
-                from six.moves import cPickle as pickle
+                import pickle
                 for dtval, jac in list(self._cache['drs'].items()):
                     # child_label = getattr(dtval, 'label') if hasattr(dtval, 'label') else dterm
                     # child_label = '%s (%s)' % (child_label, str(dtval.__class__.__name__))
